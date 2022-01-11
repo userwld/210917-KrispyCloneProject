@@ -117,7 +117,7 @@ function checkData() {
 						
 						<tr>
 							<th class="c_th02" scope="row"><label for="title">제목</label></th>
-							<td><input type="text" name="title" id="title" maxlength="30" value="" title="제목 입력" style="width:548px" /></td>
+							<td><input type="text" name="title" id="title" maxlength="30" value="" title="제목 입력" style="width:552px" /></td>
 						</tr>
 						<tr>
 							<th class="c_th02" scope="row"><label for="question">내용</label></th>
@@ -125,7 +125,7 @@ function checkData() {
 							<td>
 								<div class="txt_textarea_block">
 									<span class="add_txt h145">※ 글자수 3,500자 (한글2자, 기타 1자)까지 입력 가능합니다.</span> 
-									<textarea name="question" id="question" cols="10" rows="10" style="width:548px;height:128px" title="고객상담 내용입력"></textarea>
+									<textarea name="question" id="question" cols="10" rows="10" style="width:546px;height:128px" title="고객상담 내용입력"></textarea>
 								</div>
 							</td>
 						</tr>

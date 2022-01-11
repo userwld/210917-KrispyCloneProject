@@ -14,6 +14,7 @@
 %>
 
 <script>
+
 function checkData() {
 	duChk = document.getElementById("duChk").value;
 	authMobile = document.getElementById("authMobile").value;
@@ -79,12 +80,33 @@ function emailCheck(){
 	
 	duplicateCheck(emailId+"@"+emailDomain);	// 위에 인증 다 통과시 이메일 중복체크 팝업열기
 	
-	chkId.innerHTML = "멋진아이디네요."; chkId.style.color="green";
 	return true;
 }
 
+/* email 중복확인 -> ajax 방식으로 변경 220112 */
+var req;
 function duplicateCheck(email){
-	window.open("registerEmailCheck.jsp?email="+email,"","width=200, height=200");
+	req = new XMLHttpRequest();
+	req.open('get','registerEmailCheck.jsp?email='+email);
+	req.send(null);	
+	
+	req.onreadystatechange = function(){
+		if(req.readyState == 4 && req.status == 200){	
+			var chkId = document.getElementById("chkId");
+			chkId.innerHTML = req.responseText;	
+			
+			var enableChk = req.responseText.substr(0,2);
+			var duChk = document.getElementById("duChk");
+			
+			if(enableChk == '사용'){
+				duChk.value = 'Y';
+				chkId.style.color="green";
+			}else{
+				duChk.value = 'N';
+				chkId.style.color="red";
+			}
+		}
+	}
 }
 
 function pwCheck(){

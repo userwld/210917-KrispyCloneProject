@@ -76,7 +76,7 @@
 
 						<tr>
 							<td colspan="5" bgcolor="white">
-								<div id = content style="height: 300px;" align="left">
+								<div id = content style="height: 300px; padding-left: 10px;" align="left">
 								<%=dto.getContent() %>
 								</div>
 									

@@ -112,7 +112,7 @@ ORA-12519, TNS:no appropriate service handler found
 					</form>
 				
 						<div class="total_board_num">Total <em><%=cl.getPageNumber() %></em> / <%=cl.getTotalPage() < 1 ? 1 : cl.getTotalPage() %></div>
-						<table class="tbl_list" >
+						<table class="tbl_list" style="width: 850px;" >
 						<caption>전체문의</caption>
 						<colgroup>
 							<col width="8%" /><col width="10%" /><col width="40%" /><col width="10%" /><col width="10%" /><col width="12%" /><col width="10%" />

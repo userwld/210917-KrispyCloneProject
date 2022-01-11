@@ -296,7 +296,7 @@ body{}
 .tbl_wrap02 .form_add,.tbl_wrap02 .form_del{position:absolute;top:-29px;right:0}
 
 /* tbl_list */
-.tbl_list{width:760px;border-top:1px solid #000000}
+.tbl_list{width:760px;}
 .tbl_list th{height:40px;background-color:#EDEBE6;border-bottom:1px solid #dcdad3;font-size:14px;color:#000000;text-align:center;font-weight:600}
 .tbl_list th.line {background-color:#F3F2ED;border-right:1px solid #dcdad3;}
 .tbl_list td{padding:11px 0 12px 0;text-align:center;border-bottom:1px solid #dcdad3;font-size:13px;color:#000}
@@ -369,7 +369,7 @@ body{}
 .tbl_write .c_th02{border-right:1px solid #dcdad3}
 .tbl_write .add_txt{display:block;padding-top:5px;padding-left:10px;text-indent:-10px;color:#666666}
 .tbl_write .add_txt02{padding:3px 0 0 5px;color:#666666;padding-left:10px;text-indent:-10px;}
-.tbl_write label{margin-right:22px}
+.tbl_write label{margin-right:20px;}
 .tbl_write input[type=radio]{margin-right:5px}
 
 /* pagination */
